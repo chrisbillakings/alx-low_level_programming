@@ -20,11 +20,10 @@ void print_alphabet(void)
 		putchar(ch);
 
 		ch++;
-
 	}
 
 
 
-	_putchar('\n');
+	putchar('\n');
 
 }
