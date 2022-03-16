@@ -14,11 +14,11 @@ void print_alphabet(void)
 	ch = 'a';
 
 	while (ch <= 'z')
-	{	
+	{
 		putchar(ch);
 		ch++;
 	}
 
 	putchar('\n');
-	
+
 }
