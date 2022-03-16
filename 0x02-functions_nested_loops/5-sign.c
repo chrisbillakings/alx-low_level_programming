@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- * print_sign - Check Alx 
+ * print_sign - Check Alx
  * @n: An input number
  * Description: Tohis function prints the sign of the number
  * Return: 1 if number is positive, o if number is 0, or
