@@ -1,20 +1,22 @@
-#include "holberton.h"
+#include "main.h"
 
 /**
- * _islower - checks for lowercase character
- * @c: character to check
- * Return: 1 if lowercase, 0 if uppercase
+ * _islower - Check Akinyemi
+ * @c: An input character
+ * Description: function uses _putchar function to print
+ * alphabet in lowercase 10 times
+ * Return: 1 if is lowercase or 0 if is uppercase
  */
-
 int _islower(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	char i;
+	int lower = 0;
+
+	for (i = 'a'; i <= 'z'; i++)
 	{
-		return (1);
+		if (i == c)
+			lower = 1;
 	}
-	else
-	{
-		return (0);
-	}
-	_putchar('\n');
+
+	return (lower);
 }
