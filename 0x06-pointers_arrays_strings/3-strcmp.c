@@ -1,23 +1,24 @@
 #include "main.h"
 
 /**
- * _strcmp - compare two strings
- * @s1: one string
- * @s2: one string
- * Return: int that tells num spaces in between
+ * _strcmp - compares two strings
+ * @s1: string 1
+ * @s2: string 2
+ * Return: 1 if true, 0 if false
  */
-
 int _strcmp(char *s1, char *s2)
 {
-        // while neither strings have ended
-        while (*s1 != '\0' || *s2 != '\0')
-        {
-		// if element in arr1 in arr2 are diff, return difference
-                if (*s1 != *s2)
-                        return (*s1 - *s2);
-		// iterate index
-                s1++;
-                s2++;
-        }
-        return (0);
+	int equal = 0;
+
+	while (*s1)
+	{
+		if (*s1 != *s2)
+		{
+			equal = ((int)*s1 - 48) - ((int)*s2 - 48);
+			break;
+		}
+		s1++;
+		s2++;
+	}
+	return (equal);
 }
